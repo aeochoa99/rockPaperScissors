@@ -19,11 +19,16 @@ function playRound(playerSelection, computerSelection) {
                    }
 }
 
+const div = document.querySelector('.results');
+
+
 const rockBtn = document.querySelector('#rock');
 rockBtn.addEventListener('click', () => {
+    div.textContent = '';
     const playerSelection = 'rock';
     const computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection));
+    const result = playRound(playerSelection, computerSelection);
+    div.append(result);
 });
 
 const paperBtn = document.querySelector('#paper');
