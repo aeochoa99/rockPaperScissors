@@ -24,10 +24,3 @@ function playRound(playerSelection, computerSelection) {
                     return `It's a tie! You both selected ${playerSelection}`;
                    }
 }
-
-function game() {
-    for (let i = 0; i < 5; i++) {
-        let result = playRound();
-        console.log(result);
-    }
-}
