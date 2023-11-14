@@ -25,3 +25,17 @@ rockBtn.addEventListener('click', () => {
     const computerSelection = getComputerChoice();
     console.log(playRound(playerSelection, computerSelection));
 });
+
+const paperBtn = document.querySelector('#paper');
+paperBtn.addEventListener('click', () => {
+    const playerSelection = 'paper';
+    const computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+});
+
+const scissorsBtn = document.querySelector('#scissors');
+scissorsBtn.addEventListener('click', () => {
+    const playerSelection = 'scissors';
+    const computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+});
