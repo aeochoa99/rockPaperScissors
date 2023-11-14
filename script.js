@@ -5,12 +5,6 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    playerSelection = prompt("Make your choice");
-    if (playerSelection !== null) {
-        playerSelection = playerSelection.toLowerCase();
-    } else {
-        return "Maybe another time."
-    }
     computerSelection = getComputerChoice();
     if (playerSelection == 'rock' && computerSelection == 'scissors' ||
         playerSelection == 'paper' && computerSelection == 'rock' ||
@@ -24,3 +18,10 @@ function playRound(playerSelection, computerSelection) {
                     return `It's a tie! You both selected ${playerSelection}`;
                    }
 }
+
+const rockBtn = document.querySelector('#rock');
+rockBtn.addEventListener('click', () => {
+    const playerSelection = 'rock';
+    const computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+});
