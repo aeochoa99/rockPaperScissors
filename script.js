@@ -18,6 +18,8 @@ function playRound(playerSelection, computerSelection) {
                     return `It's a tie! You both selected ${playerSelection}`;
                    }
 }
+let userScore = 0;
+let cpuScore = 0;
 
 const div = document.querySelector('.results');
 
