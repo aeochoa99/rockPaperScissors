@@ -28,8 +28,7 @@ const rockBtn = document.querySelector('#rock');
 rockBtn.addEventListener('click', () => {
     div.textContent = '';
     const playerSelection = 'rock';
-    const computerSelection = getComputerChoice();
-    const result = playRound(playerSelection, computerSelection);
+    const result = playRound(playerSelection);
     div.append(result);
 });
 
@@ -37,8 +36,7 @@ const paperBtn = document.querySelector('#paper');
 paperBtn.addEventListener('click', () => {
     div.textContent = '';
     const playerSelection = 'paper';
-    const computerSelection = getComputerChoice();
-    const result = playRound(playerSelection,computerSelection);
+    const result = playRound(playerSelection);
     div.append(result);
 });
 
@@ -46,7 +44,6 @@ const scissorsBtn = document.querySelector('#scissors');
 scissorsBtn.addEventListener('click', () => {
     div.textContent = '';
     const playerSelection = 'scissors';
-    const computerSelection = getComputerChoice();
-    const result = playRound(playerSelection,computerSelection);
+    const result = playRound(playerSelection);
     div.append(result);
 });
