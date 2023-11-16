@@ -1,0 +1,24 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.userScore {
+    display: flex;
+    justify-content: center;
+}
+
+.cpuScore {
+    display: flex;
+    justify-content: center;
+}
