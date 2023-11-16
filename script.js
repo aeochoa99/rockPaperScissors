@@ -75,3 +75,10 @@ function resetScoreboard() {
     userScore = 0;
     cpuScore = 0;
 }
+
+const newGame = document.querySelector('#newGame');
+
+newGame.addEventListener('click', () => {
+    document.querySelector('.winner').textContent = '';
+    div.textContent = '';
+});
