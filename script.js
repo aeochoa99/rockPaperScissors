@@ -66,6 +66,12 @@ function updateScoreboard() {
 }
 
 function resetScoreboard() {
+    const winner = document.querySelector('.winner');
+    if (userScore == 5) {
+        winner.textContent = `You won 5 to ${cpuScore}!`;
+    } else if (cpuScore == 5) {
+        winner.textContent = `You lost 5 to ${userScore}!`;
+    }
     userScore = 0;
     cpuScore = 0;
 }
