@@ -6,17 +6,26 @@ function getComputerChoice() {
 
 function playRound(playerSelection) {
     const computerSelection = getComputerChoice();
+    let result = '';
     if (playerSelection == 'rock' && computerSelection == 'scissors' ||
         playerSelection == 'paper' && computerSelection == 'rock' ||
         playerSelection == 'scissors' && computerSelection == 'paper') {
-            return `You win! ${playerSelection} beats ${computerSelection}!`;
+            result = `You win! ${playerSelection} beats ${computerSelection}!`;
+            userScore++;
         } else if (computerSelection == 'rock' && playerSelection == 'scissors' ||
                    computerSelection == 'paper' && playerSelection == 'rock' ||
                    computerSelection == 'scissors' && playerSelection == 'paper') {
-                    return `You lose! ${computerSelection} beats ${playerSelection}`;
+                    result = `You lose! ${computerSelection} beats ${playerSelection}`;
+                    cpuScore++;
                    } else {
-                    return `It's a tie! You both selected ${computerSelection}`;
+                    result = `It's a tie! You both selected ${computerSelection}`;
                    }
+    if (userScore == 5 || cpuScore == 5) {
+        resetScoreboard();
+    }
+
+    updateScoreboard();
+    return result;
 }
 let userScore = 0;
 let cpuScore = 0;
