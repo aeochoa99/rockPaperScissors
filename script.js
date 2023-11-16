@@ -47,3 +47,11 @@ scissorsBtn.addEventListener('click', () => {
     const result = playRound(playerSelection);
     div.append(result);
 });
+
+function updateScoreboard() {
+    const user = document.querySelector('.userScore');
+    const cpu = document.querySelector('.cpuScore');
+
+    user.textContent = userScore;
+    cpu.textContent = cpuScore;
+}
