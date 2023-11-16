@@ -55,3 +55,8 @@ function updateScoreboard() {
     user.textContent = userScore;
     cpu.textContent = cpuScore;
 }
+
+function resetScoreboard() {
+    userScore = 0;
+    cpuScore = 0;
+}
