@@ -27,6 +27,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 48px;
+    margin-top: 72px;
 }
 
 button {
@@ -36,5 +37,9 @@ button {
 .newGameBtn {
     display: flex;
     justify-content: center;
-    margin-top: 32px;
+    margin-top: 72px;
+}
+
+#newGame {
+    font-size: 16px;
 }
