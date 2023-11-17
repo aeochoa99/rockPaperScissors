@@ -7,7 +7,7 @@ h1, h2 {
     justify-content: space-evenly;
 }
 
-.userScore, .cpuScore {
+.userScore, .cpuScore, .results {
     display: flex;
     justify-content: center;
 }
@@ -44,4 +44,9 @@ button {
 
 .userScore, .cpuScore {
     font-size: 48px;
+}
+
+.results, .winner {
+    margin-top: 56px;
+    font-size: 18px;
 }
