@@ -22,6 +22,7 @@ function playRound(playerSelection) {
                    }
     if (userScore == 5 || cpuScore == 5) {
         resetScoreboard();
+        disableButtons();
     }
 
     updateScoreboard();
