@@ -73,8 +73,6 @@ function resetScoreboard() {
     } else if (cpuScore == 5) {
         winner.textContent = `You lost 5 to ${userScore}!`;
     }
-    userScore = 0;
-    cpuScore = 0;
 }
 
 const newGame = document.querySelector('#newGame');
@@ -82,6 +80,14 @@ const newGame = document.querySelector('#newGame');
 newGame.addEventListener('click', () => {
     document.querySelector('.winner').textContent = '';
     div.textContent = '';
+    userScore = 0;
+    cpuScore = 0;
+    rockBtn.disabled = false;
+    paperBtn.disabled = false;
+    scissorsBtn.disabled = false;
+    document.querySelector('.userScore').textContent = userScore;
+    document.querySelector('.cpuScore').textContent = cpuScore;
+
 });
 
 function disableButtons() {
