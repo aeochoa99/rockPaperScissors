@@ -7,7 +7,7 @@ h1, h2 {
     justify-content: space-evenly;
 }
 
-.userScore, .cpuScore, .results {
+.userScore, .cpuScore, .results, .winner {
     display: flex;
     justify-content: center;
 }
