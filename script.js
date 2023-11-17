@@ -82,3 +82,9 @@ newGame.addEventListener('click', () => {
     document.querySelector('.winner').textContent = '';
     div.textContent = '';
 });
+
+function disableButtons() {
+    rockBtn.disabled = true;
+    paperBtn.disabled = true;
+    scissorsBtn.disabled = true;
+}
